@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Registro - Networkx</title>
+  <!-- Si tienes estilos globales, puedes enlazarlos -->
+  <!-- <link rel="stylesheet" href="css/estilos.css"> -->
+  <style>
+    html, body { height:100%; margin:0; padding:0; font-family: Arial, sans-serif; }
+    body {
+      background: url("img/premium_photo-1733306493254-52b143296396.jpg") no-repeat center center fixed;
+      background-size: cover;
+      display:flex; justify-content:center; align-items:center; min-height:100vh; overflow:hidden;
+    }
+    .overlay { position:fixed; top:0; left:0; width:100%; height:100%; background-color:rgba(0,0,0,0.35); z-index:0; }
+    .container {
+      position:relative; z-index:1; background:rgba(255,255,255,0.92);
+      backdrop-filter: blur(8px); border-radius:18px; padding:30px; width:90%; max-width:450px;
+      box-shadow: 0 8px 30px rgba(0,0,0,0.35);
+    }
+    h1 { text-align:center; color:#1565C0; margin-bottom:20px; }
+    .label { display:block; margin-bottom:6px; font-weight:700; color:#1565C0; }
+    .input { width:100%; padding:10px; border:1px solid #ccc; border-radius:8px; margin-bottom:14px; font-size:14px; box-sizing:border-box; }
+    .btn { background:#1565C0; color:#fff; border:none; padding:12px; width:100%; border-radius:8px; cursor:pointer; font-size:16px; }
+    .btn:hover { background:#0d47a1; }
+    a { color:#1565C0; text-decoration:none; }
+    a:hover { text-decoration:underline; }
+  </style>
+</head>
+<body>
+  <div class="overlay"></div>
+
+  <div class="container">
+    <div style="display:flex;flex-direction:column;align-items:center;text-align:center;margin-bottom:18px;">
+      <img src="img/Networkx.jpeg" alt="Logo" style="width:110px;height:110px;border-radius:10px;object-fit:contain;margin-bottom:6px;">
+      <strong style="font-size:20px;color:#1565C0;">Networkx</strong>
+      <div style="font-size:13px;color:#1565C0;opacity:0.9;">Conecta emprendedores</div>
+    </div>
+
+    <h1>Registro de usuario</h1>
+
+    <form id="formRegistro" action="inicio.html" method="GET" novalidate>
+      <label class="label" for="nombre">Nombre completo</label>
+      <input class="input" id="nombre" name="nombre" type="text" placeholder="Ej: Edison Guapacho" required>
+
+      <label class="label" for="correo">Correo electrónico</label>
+      <input class="input" id="correo" name="correo" type="email" placeholder="ej: edison@correo.com" required>
+
+      <label class="label" for="usuario">Usuario</label>
+      <input class="input" id="usuario" name="usuario" type="text" placeholder="Ej: edison123" required>
+
+      <label class="label" for="password">Contraseña</label>
+      <input class="input" id="password" name="password" type="password" placeholder="Mínimo 6 caracteres" required>
+
+      <button class="btn" type="submit">Crear cuenta</button>
+    </form>
+
+    <div style="text-align:center;margin-top:10px;">
+      <a href="index.html">¿Ya tienes cuenta? Inicia sesión</a>
+    </div>
+  </div>
+
+  <!-- Incluir tu JS si lo necesitas -->
+  <script src="js/scripts.js"></script>
+</body>
+</html>

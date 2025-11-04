@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Perfil - Edison Guapacho</title>
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: url("img/premium_photo-1733306493254-52b143296396.jpg") no-repeat center center fixed;
+      background-size: cover;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      min-height: 100vh;
+      color: #fff;
+    }
+
+    .overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.55);
+      z-index: 0;
+    }
+
+    .perfil-container {
+      position: relative;
+      z-index: 1;
+      background: rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(8px);
+      border-radius: 20px;
+      padding: 30px;
+      width: 90%;
+      max-width: 800px;
+      margin: 50px 0;
+      box-shadow: 0 8px 30px rgba(0, 0, 0, 0.4);
+    }
+
+    .perfil-header {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      margin-bottom: 25px;
+    }
+
+    .perfil-header img {
+      width: 160px;
+      height: 160px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 4px solid #fff;
+      margin-bottom: 10px;
+      box-shadow: 0 0 15px rgba(255,255,255,0.3);
+    }
+
+    h1 {
+      color: #fff;
+      font-size: 26px;
+      margin-bottom: 8px;
+    }
+
+    h2 {
+      color: #1E90FF;
+      margin-top: 30px;
+      border-bottom: 2px solid #1E90FF;
+      padding-bottom: 5px;
+      font-size: 20px;
+    }
+
+    p {
+      line-height: 1.6;
+      font-size: 15px;
+      margin-bottom: 10px;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    li {
+      margin-bottom: 6px;
+    }
+
+    button {
+      background-color: #1E90FF;
+      color: white;
+      border: none;
+      padding: 10px 25px;
+      border-radius: 8px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background 0.3s;
+      margin-top: 25px;
+    }
+
+    button:hover {
+      background-color: #63b3ed;
+    }
+  </style>
+</head>
+
+<!-- ✅ AQUÍ está el cambio importante -->
+<body class="perfil-page">
+  <div class="overlay"></div>
+
+  <div class="perfil-container">
+    <div class="perfil-header">
+      <img id="perfil-foto" src="img/Foto_de_perfil_Edison_Guapacho.jpeg" alt="Foto de perfil">
+      <h1 id="perfil-nombre">Edison David Guapacho Carranza</h1>
+      <p id="perfil-cargo"><strong>Ingeniero Industrial | Especialista en Alta Gerencia | Tecnólogo en Logística | Estudiante de Análisis y Desarrollo de Software</strong></p>
+    </div>
+
+    <section>
+      <h2>Perfil Profesional</h2>
+      <p>Soy un transformador de procesos, un líder estratégico y un profesional en constante evolución.
+Ingeniero Industrial y Especialista en Alta Gerencia, con más de 16 años impulsando la eficiencia, calidad y productividad en entornos de alto desempeño. He liderado operaciones de producción, logística y mantenimiento industrial, logrando mejoras tangibles aplicando 5S, TPM y BPM en empresas de gran escala.
+
+Mi enfoque combina la experiencia operativa con la visión tecnológica. Manejo herramientas clave como SAP, WMS, Kannap y Excel avanzado, y actualmente amplío mi perfil con formación en Power BI, análisis de datos y desarrollo de software, integrando inteligencia operativa con analítica para tomar decisiones precisas y ágiles.
+
+No solo gestiono procesos: genero impacto sostenible. Me muevo por resultados, por personas y por la oportunidad de innovar desde el piso de planta hasta la alta dirección. Soy ese profesional que no teme liderar el cambio, que conecta la operación con la estrategia, y que transforma desafíos en ventajas competitivas.</p>
+    </section>
+
+    <section>
+      <h2>Formación Académica</h2>
+      <ul>
+        <li><strong>Ingeniería Industrial</strong> – Politécnico Grancolombiano</li>
+        <li><strong>Especialización en Alta Gerencia</strong> – Politécnico Grancolombiano</li>
+        <li><strong>Tecnólogo en Gestión Logística</strong> – Politécnico Grancolombiano</li>
+        <li><strong>Tecnólogo en Logística</strong> – SENA</li>
+        <li><strong>Técnico Profesional en Mecatrónica</strong></li>
+        <li><strong>Actualmente:</strong> Tecnólogo en Análisis y Desarrollo de Software – SENA</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Experiencia Laboral</h2>
+      <ul>
+        <li><strong>Coopidrogas</strong> – Coordinador de operaciónes (Actualidad)</li>
+        <li><strong>FritoLay (PepsiCo Alimentos)</strong> – Operador de producción y líder de personal</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Habilidades</h2>
+      <ul>
+        <li>Gestión logística y planeación de la producción</li>
+        <li>Dominio de Excel avanzado y Power BI</li>
+        <li>Conocimientos en Python, HTML, CSS y análisis de datos</li>
+        <li>Trabajo en equipo y liderazgo</li>
+        <li>Implementación de TIC en procesos productivos</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Contacto</h2>
+      <p><strong>Correo:</strong> <span id="perfil-correo">pachodavid@gmail.com</span></p>
+      <p><strong>Teléfono:</strong> <span id="perfil-telefono">+57 316 685 5701</span></p>
+    </section>
+
+    <button onclick="window.location.href='inicio.html'">🏠 Volver al inicio</button>
+    <button onclick="window.location.href='editar_perfil.html'">✏️ Editar perfil</button>
+  </div>
+
+  <!-- ✅ Enlace al JavaScript -->
+  <script src="js/scripts.js"></script>
+</body>
+</html>

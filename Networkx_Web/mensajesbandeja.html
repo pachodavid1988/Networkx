@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bandeja de Mensajes | Networkx</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(120deg, #0a0f1a, #1c2331);
+            color: #fff;
+        }
+
+        header {
+            background-color: rgba(0, 0, 0, 0.6);
+            text-align: center;
+            padding: 20px;
+            font-size: 1.8rem;
+            font-weight: bold;
+            letter-spacing: 1px;
+        }
+
+        main {
+            max-width: 900px;
+            margin: 30px auto;
+            background-color: rgba(255, 255, 255, 0.1);
+            border-radius: 15px;
+            padding: 20px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+        }
+
+        .mensaje {
+            background-color: rgba(255, 255, 255, 0.05);
+            padding: 15px;
+            border-radius: 10px;
+            margin-bottom: 15px;
+            transition: transform 0.2s ease;
+        }
+
+        .mensaje:hover {
+            transform: scale(1.02);
+            background-color: rgba(255,255,255,0.15);
+        }
+
+        .remitente {
+            font-weight: bold;
+            font-size: 1.1rem;
+            color: #00bcd4;
+        }
+
+        .asunto {
+            margin-top: 5px;
+            color: #fff;
+            font-size: 1rem;
+        }
+
+        .fecha {
+            font-size: 0.9rem;
+            color: #aaa;
+            text-align: right;
+        }
+
+        .botones {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+
+        .boton {
+            background-color: #00bcd4;
+            border: none;
+            color: #fff;
+            padding: 10px 20px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        .boton:hover {
+            background-color: #0097a7;
+        }
+    </style>
+</head>
+<body>
+
+    <header>Bandeja de Mensajes</header>
+
+    <main>
+        <div class="mensaje">
+            <div class="remitente">Juan Pérez</div>
+            <div class="asunto">¡Hola Edison! Me interesa colaborar contigo en Networkx.</div>
+            <div class="fecha">03 de noviembre de 2025</div>
+        </div>
+
+        <div class="mensaje">
+            <div class="remitente">María López</div>
+            <div class="asunto">Propuesta de mejora para el proyecto.</div>
+            <div class="fecha">02 de noviembre de 2025</div>
+        </div>
+
+        <div class="botones">
+            <a href="inicio.html" class="boton">🏠 Volver al inicio</a>
+            <a href="nuevo_mensaje.html" class="boton">✉️ Nuevo Mensaje</a>
+        </div>
+    </main>
+
+</body>
+</html>
