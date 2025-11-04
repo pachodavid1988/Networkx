@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nuevo Mensaje | Networkx</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(120deg, #0a0f1a, #1c2331);
+      color: #fff;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    header {
+      background-color: rgba(0, 0, 0, 0.7);
+      text-align: center;
+      padding: 20px;
+      font-size: 1.8rem;
+      font-weight: bold;
+      letter-spacing: 1px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.4);
+    }
+
+    main {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 30px;
+    }
+
+    .card {
+      background-color: rgba(255, 255, 255, 0.08);
+      padding: 30px 40px;
+      border-radius: 20px;
+      max-width: 600px;
+      width: 100%;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.4);
+      animation: fadeIn 0.8s ease-in-out;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(-10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    h2 {
+      text-align: center;
+      color: #00bcd4;
+      margin-bottom: 20px;
+      font-size: 1.6rem;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 8px;
+      font-weight: bold;
+      color: #00bcd4;
+    }
+
+    input, textarea {
+      width: 100%;
+      padding: 12px;
+      margin-bottom: 20px;
+      border: none;
+      border-radius: 10px;
+      background-color: rgba(255, 255, 255, 0.1);
+      color: #fff;
+      font-size: 1rem;
+      outline: none;
+      transition: background 0.3s ease;
+    }
+
+    input:focus, textarea:focus {
+      background-color: rgba(255, 255, 255, 0.2);
+    }
+
+    textarea {
+      resize: none;
+      height: 120px;
+    }
+
+    .botones {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .boton {
+      background-color: #00bcd4;
+      color: #fff;
+      border: none;
+      padding: 12px 25px;
+      border-radius: 10px;
+      font-weight: bold;
+      text-decoration: none;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      text-align: center;
+      flex: 1;
+    }
+
+    .boton:hover {
+      background-color: #0097a7;
+      transform: scale(1.03);
+    }
+
+    footer {
+      text-align: center;
+      padding: 15px;
+      font-size: 0.9rem;
+      color: #aaa;
+      background-color: rgba(0, 0, 0, 0.6);
+      letter-spacing: 0.5px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>✉️ Enviar Nuevo Mensaje</header>
+
+  <main>
+    <div class="card">
+      <h2>Redactar mensaje</h2>
+      <form id="formMensaje">
+        <label for="destinatario">Destinatario:</label>
+        <input type="text" id="destinatario" name="destinatario" placeholder="Ej: Juan Pérez" required>
+
+        <label for="asunto">Asunto:</label>
+        <input type="text" id="asunto" name="asunto" placeholder="Asunto del mensaje" required>
+
+        <label for="mensaje">Mensaje:</label>
+        <textarea id="mensaje" name="mensaje" placeholder="Escribe tu mensaje aquí..." required></textarea>
+
+        <div class="botones">
+          <button type="submit" class="boton">📨 Enviar</button>
+          <a href="mensajesbandeja.html" class="boton">📥 Bandeja</a>
+          <a href="inicio.html" class="boton">🏠 Inicio</a>
+        </div>
+      </form>
+    </div>
+  </main>
+
+  <footer>
+    © 2025 Networkx | Desarrollado por Edison Guapacho
+  </footer>
+
+  <script>
+    document.getElementById('formMensaje').addEventListener('submit', function(e) {
+      e.preventDefault();
+      alert('✅ Mensaje enviado con éxito');
+      window.location.href = 'mensajesbandeja.html';
+    });
+  </script>
+
+</body>
+</html>

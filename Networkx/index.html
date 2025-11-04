@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Networkx - Login</title>
+  <style>
+    /* --- RESETEO Y FONDO COMPLETO --- */
+    html, body {
+      height: 100%;
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background: url("img/premium_photo-1733306493254-52b143296396.jpg") no-repeat center center fixed;
+      background-size: cover;      /* Cubre toda la pantalla */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      overflow: hidden;
+    }
+
+    /* --- CAPA SEMITRANSPARENTE PARA MEJOR VISIBILIDAD --- */
+    .overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.35); /* Oscurece el fondo */
+      z-index: 0;
+    }
+
+    /* --- CONTENEDOR DEL FORMULARIO --- */
+    .container {
+      position: relative;
+      z-index: 1;
+      background: rgba(255, 255, 255, 0.85);
+      backdrop-filter: blur(10px);
+      border-radius: 20px;
+      padding: 40px;
+      width: 90%;
+      max-width: 400px;
+      box-shadow: 0 8px 30px rgba(0, 0, 0, 0.4);
+    }
+
+    h1 {
+      text-align: center;
+      color: #1565C0;
+      margin-bottom: 25px;
+    }
+
+    .label {
+      display: block;
+      margin-bottom: 6px;
+      font-weight: bold;
+      color: #1565C0;
+    }
+
+    .input {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      margin-bottom: 15px;
+      font-size: 14px;
+    }
+
+    .btn {
+      background-color: #1565C0;
+      color: #fff;
+      border: none;
+      padding: 12px;
+      width: 100%;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 16px;
+      transition: background-color 0.3s;
+    }
+
+    .btn:hover {
+      background-color: #0d47a1;
+    }
+
+    a {
+      color: #1565C0;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <div class="overlay"></div> <!-- Capa que oscurece el fondo -->
+
+  <div class="container">
+    <div style="display:flex;flex-direction:column;align-items:center;text-align:center;margin-bottom:24px;">
+      <img src="img/Networkx.jpeg" alt="Logo de Networkx" style="width:140px;height:140px;border-radius:12px;margin-bottom:6px;object-fit:contain;">
+      <strong style="font-size:22px;color:#1565C0;">Networkx</strong>
+      <div style="font-size:14px;color:#1565C0;opacity:0.9;">Conecta emprendedores</div>
+    </div>
+
+    <main class="card" role="main" aria-labelledby="titulo-login">
+      <h1 id="titulo-login">Inicia sesión</h1>
+
+      <form class="form" action="inicio.html" method="GET" novalidate>
+        <div>
+          <label class="label" for="user">Usuario o correo</label>
+          <input class="input" id="user" name="user" type="text" placeholder="ej: edison@correo.com" required>
+        </div>
+
+        <div>
+          <label class="label" for="pass">Contraseña</label>
+          <input class="input" id="pass" name="pass" type="password" placeholder="••••••••" required>
+        </div>
+
+        <button class="btn" type="submit">Iniciar sesión</button>
+
+        <div style="text-align:center;margin-top:8px;">
+          <a href="registro.html">¿No tienes cuenta? Regístrate</a>
+        </div>
+      </form>
+    </main>
+  </div>
+</body>
+</html>
+
